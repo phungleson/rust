@@ -3219,9 +3219,6 @@ impl<'a, 'gcx, 'tcx> FnCtxt<'a, 'gcx, 'tcx> {
                              pprust::path_to_string(path))
                 .span_label(path.span, &format!("not a struct"))
                 .emit();
-
-            // println!("sess {}", self.tcx.sess);
-            println!("span {:?}", path.span);
             None
         }
     }
